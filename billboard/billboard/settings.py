@@ -137,7 +137,7 @@ STATICFILES_DIRS = (
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
-LOGIN_REDIRECT_URL = '/billboard/'
+LOGIN_REDIRECT_URL = '/'
 
 LOGIN_URL = '/login/'
 
