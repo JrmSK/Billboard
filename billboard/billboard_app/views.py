@@ -26,7 +26,7 @@ def index(request):
         username = request.user.username
     if request.method == 'POST':
         title = request.POST.get('title')
-        message = request.POST.get('message')
-        model = Messages(title=title, message=message, author=username, date=date_post)
+        message = request.POST.get('message2')
+        model = Messages(title=title, text=message, author=username, date=date_post)
         model.save()
     return render(request, 'billboard_app/index.html', {'messages': messages, 'date': date_post, 'username': username})

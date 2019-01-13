@@ -3,7 +3,7 @@ body{
 }
 
 #logout-button{
-    float: left;
+    float: right;
     position: absolute;
 }
 
@@ -31,25 +31,25 @@ body{
     margin: 1%;
 }
 
-#date{
+.date{
     font-family: 'Poiret One', cursive;
     font-size: 16px;
     color: black;
 }
 
-#title{
+.title{
     font-family: 'Anton', sans-serif;
     font-size: 30px;
     color:#00b7ef;
 }
 
-#message{
+.message{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #c1bfc0;
 }
 
-#author{
+.author{
     font-family: 'Pinyon Script', cursive;
     font-size: 24px;
     color: black;

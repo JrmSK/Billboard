@@ -23,6 +23,6 @@ urlpatterns = [
     url(r'^login/$', auth_views.LoginView.as_view(template_name='registration/login.html'), name="login"),
     url(r'^logout/$', auth_views.LogoutView.as_view(template_name='registration/logged_out.html'), name="logout"),
     url(r'^admin/', admin.site.urls),
-    url(r'^billboard_app/', include('billboard_app.urls')),
+    url(r'^billboard/', include('billboard_app.urls')),
 
 ]

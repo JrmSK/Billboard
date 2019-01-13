@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Billboard</title>
+    <title class="billboard-title align-center">Billboard</title>
     <link href="https://fonts.googleapis.com/css?family=Anton|Pinyon+Script|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
@@ -28,10 +28,10 @@
         {% else %}
         {% for message in messages %}
         <fieldset class="message-box">
-            <legend id="date">{{ message.date }}</legend>
-            <h1 id="title">{{ message.title }}</h1>
-            <p id="message">{{ message.message }}</p>
-            <div id="author">{{ message.author }}</div>
+            <legend class="date">{{ message.date }}</legend>
+            <h1 class="title">{{ message.title }}</h1>
+            <p class="message">{{ message.text }}</p>
+            <div class="author">{{ message.author }}</div>
         </fieldset>
         {% endfor %}
         {% endif %}
@@ -45,17 +45,17 @@
                 {% csrf_token %}
                 <input type="text" placeholder="Title" name="title" id="title-input">
                 <br />
-                <textarea type="text" placeholder="Your message here" name="message" id="message-input"></textarea>
+                <textarea type="text" placeholder="Your message here" name="message2" id="message-input"></textarea>
                 <br />
                 <input type="text" placeholder="Author" name="author" id="author-input">
             </fieldset>
-            <div class="add-text align mx-auto">
+            <div class="add-text align-center mx-auto">
                 <button type="button" class="btn cancel-button"><i class="fas fa-times"></i></button>
                 <button type="submit" class="btn send-button"><i class="fas fa-check"></i></button>
             </div>
         </form>
     </div>
-    <div class="add-text mx-auto" id="display-form">
+    <div class="add-text align-center mx-auto" id="display-form">
         <button type="button" class="btn plus-button"><i class="fas fa-plus"></i></button>
     </div>
 
