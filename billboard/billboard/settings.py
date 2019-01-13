@@ -125,21 +125,21 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATIC_URL = '/static/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_HOST = 'https://thawing-savannah-93389.herokuapp.com/billboard_app/' if not DEBUG else ''
+# STATIC_URL = STATIC_HOST + '/static/'
+#
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
+#
+# STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_HOST = 'https://rocky-earth-26916.herokuapp.com/billboard_app/' if not DEBUG else ''
-STATIC_URL = STATIC_HOST + '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/billboard/'
 
 LOGIN_URL = '/login/'
 
