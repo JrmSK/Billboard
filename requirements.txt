@@ -6,7 +6,7 @@ Django==1.11
 django-heroku==0.3.1
 idna==2.8
 MarkupSafe==1.1.0
-mysql-connector-python==8.0.13
+mysql-connector-python==8.0.14
 numpy==1.15.4
 pandas==0.23.4
 profanity==1.1
